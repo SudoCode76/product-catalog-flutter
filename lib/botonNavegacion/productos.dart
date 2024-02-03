@@ -265,8 +265,9 @@ class _productosState extends State<productos> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text('Ingrese la key para W10:'),
+          title: Text('Ingrese la key para W11:'),
           content: Column(
+            mainAxisSize: MainAxisSize.min,
             children: [
               TextField(
                 keyboardType: TextInputType.text,
@@ -276,24 +277,29 @@ class _productosState extends State<productos> {
                   });
                 },
               ),
-              SizedBox(height: 16),
-              ElevatedButton(
-                onPressed: () {
-                  _guardarDatosw11();
-                  Navigator.of(context).pop();
-                },
-                child: Text('Guardar'),
-              ),
             ],
           ),
           actions: [
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              child: Text('Cerrar'),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                ElevatedButton(
+                  onPressed: () {
+                    _guardarDatosw11();
+                    Navigator.of(context).pop();
+                  },
+                  child: Text('Guardar'),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                  },
+                  child: Text('Cerrar'),
+                ),
+              ],
             ),
           ],
+          contentPadding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
         );
       },
     );
@@ -310,6 +316,7 @@ class _productosState extends State<productos> {
         return AlertDialog(
           title: Text('Ingrese la key para Office 2019 Pro Plus:'),
           content: Column(
+            mainAxisSize: MainAxisSize.min,
             children: [
               TextField(
                 keyboardType: TextInputType.text,
@@ -319,24 +326,29 @@ class _productosState extends State<productos> {
                   });
                 },
               ),
-              SizedBox(height: 16),
-              ElevatedButton(
-                onPressed: () {
-                  _guardarDatosOffice2019PP();
-                  Navigator.of(context).pop();
-                },
-                child: Text('Guardar'),
-              ),
             ],
           ),
           actions: [
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              child: Text('Cerrar'),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                ElevatedButton(
+                  onPressed: () {
+                    _guardarDatosOffice2019PP();
+                    Navigator.of(context).pop();
+                  },
+                  child: Text('Guardar'),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                  },
+                  child: Text('Cerrar'),
+                ),
+              ],
             ),
           ],
+          contentPadding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
         );
       },
     );
@@ -353,6 +365,7 @@ class _productosState extends State<productos> {
         return AlertDialog(
           title: Text('Ingrese la key para Office 2021 Pro Plus:'),
           content: Column(
+            mainAxisSize: MainAxisSize.min,
             children: [
               TextField(
                 keyboardType: TextInputType.text,
@@ -362,24 +375,29 @@ class _productosState extends State<productos> {
                   });
                 },
               ),
-              SizedBox(height: 16),
-              ElevatedButton(
-                onPressed: () {
-                  _guardarDatosOffice2021PP();
-                  Navigator.of(context).pop();
-                },
-                child: Text('Guardar'),
-              ),
             ],
           ),
           actions: [
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              child: Text('Cerrar'),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                ElevatedButton(
+                  onPressed: () {
+                    _guardarDatosOffice2021PP();
+                    Navigator.of(context).pop();
+                  },
+                  child: Text('Guardar'),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                  },
+                  child: Text('Cerrar'),
+                ),
+              ],
             ),
           ],
+          contentPadding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
         );
       },
     );
