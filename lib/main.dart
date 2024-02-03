@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:sudo_keys/botonNavegacion/bottom_nav.dart';
-import 'package:sudo_keys/botonNavegacion/rutas.dart';
 
 void main() => runApp(const MyApp());
 
