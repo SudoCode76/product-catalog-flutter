@@ -1,6 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+// Datos para Windows 10 Pro
+String w10Value = '';
+
+// Datos para Windows 11 Pro
+String w11Value = '';
+
+// Datos para Office 2021 Pro Plus
+String office2021Value = '';
+
+// Datos para Office 2019 Pro Plus
+String office2019Value = '';
+
 class productos extends StatefulWidget {
   const productos({Key? key}) : super(key: key);
 
@@ -10,17 +22,6 @@ class productos extends StatefulWidget {
 
 class _productosState extends State<productos> {
   late SharedPreferences _prefs;
-  // Datos para Windows 10 Pro
-  String w10Value = '';
-
-  // Datos para Windows 11 Pro
-  String w11Value = '';
-
-  // Datos para Office 2021 Pro Plus
-  String office2021Value = '';
-
-  // Datos para Office 2019 Pro Plus
-  String office2019Value = '';
 
   @override
   void initState() {
@@ -36,6 +37,16 @@ class _productosState extends State<productos> {
       office2021Value = _prefs.getString('office2021Value') ?? '';
       office2019Value = _prefs.getString('office2019Value') ?? '';
     });
+  }
+
+  Map<String, String> obtenerValores() {
+    //para usar los valores en otras paginas
+    return {
+      'w10Value': w10Value,
+      'w11Value': w11Value,
+      'office2021Value': office2021Value,
+      'office2019Value': office2019Value,
+    };
   }
 
   @override
