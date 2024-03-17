@@ -58,15 +58,14 @@ class _productosState extends State<productos> {
       home: Scaffold(
         appBar: AppBar(
           title: Text(
-            'Productos',
+            '',
             style: TextStyle(
               color: Colors.white,
             ),
           ),
           centerTitle: true,
           backgroundColor: const Color.fromARGB(
-              255, 53, 33, 45), // Cambia el color del AppBar
-          
+              255, 196, 174, 202), // Cambia el color del AppBar
         ),
         backgroundColor: const Color.fromARGB(
             255, 196, 174, 202), // Cambia el color de fondo aquí
